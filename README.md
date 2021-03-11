@@ -1,3 +1,3 @@
 ## Django Scaffolding
 
-about Django login test..
+about Django Scaffolding
