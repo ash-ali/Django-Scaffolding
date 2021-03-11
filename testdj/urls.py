@@ -17,11 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from login import views
-
+from jsondemo import views02
 urlpatterns = [
+    path('getinfo/', views02.getinfo),  # 接口形式http://127.0.0.1:8000/getinfo/?page=1&limit=2
+    path('testjsondata/', views02.testjsondata),
     path('admin/', admin.site.urls),
-    path('index/',views.index),
-    path('login/',views.login),
-    path('logout/',views.logout),
-    path('register/',views.register)
+    path('index/', views.index),
+    path('login/', views.login),
+    path('logout/', views.logout),
+
 ]
